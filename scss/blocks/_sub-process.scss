@@ -1,0 +1,121 @@
+.sub-process {
+  margin: 13% 0;
+  padding-top: 7%;
+  height: 550px;
+  position: relative;
+  background-color: $subscribe-sub-process-bg-color;
+  border-radius: 10px;
+
+  &__box {
+    margin-left: 10%;
+    .box__line {
+      width: 66%;
+    }
+  }
+  &__schedule {
+    width: 69.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    top: -20px;
+    left: -1.7%;
+    padding-bottom: 6%;
+  }
+  &__list {
+    width: 88.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+  &__items {
+    width: 100%;
+  }
+  &__subtitle {
+    width: 55%;
+    padding: 13% 0 10%;
+    font-family: "Fraunces 9pt";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: $sub-process-text-title-color;
+  }
+  &__text {
+    width: 80%;
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $sub-process-text-title-color;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .sub-process {
+    &__box {
+      margin-left: 5%;
+    }
+    &__subtitle {
+      width: 60%;
+      font-size: 30px;
+      line-height: 34px;
+    }
+    &__text {
+      width: 95%;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+@media only screen and (max-width: 983px) {
+  .sub-process {
+    &__box {
+      margin-left: 4%;
+      .box__line {
+        width: 63%;
+        margin-left: 1.6%;
+      }
+    }
+    &__list {
+      width: 100%;
+    }
+    &__subtitle {
+      width: 70%;
+    }
+  }
+}
+@media only screen and (max-width: 744px){
+  .sub-process{
+    height: 830px;
+   &__schedule{
+    display: none;
+   }
+   .box__line{
+    display: none;
+   }
+   &__list{
+    flex-direction: column;
+   }
+   &__items{
+    text-align: center;
+    margin-top: 70px;
+   }
+   &__subtitle{
+    padding: 3% 0;
+    width: 100%;
+   }
+  }
+}
+@media only screen and (max-width: 550px){
+  .sub-process{
+    height: 900px;
+  }
+}

@@ -1,0 +1,67 @@
+.create {
+  background-image: url(/img/subscribe-picture.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 450px;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 11% 0 4% 8%;
+
+    h1 {
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 72px;
+      line-height: 72px;
+      color: var(--about-text-color);
+    }
+    p{
+        width: 37%;
+        @extend %text;
+        color: var(--about-text-color);
+    }
+  }
+}
+@media only screen and (max-width: 1230px){
+  .create{
+    &__box{
+      h1{
+        font-size: 55px;
+        line-height: 55px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 798px){
+  .create{
+    text-align: center;
+    &__box{
+      padding: 15% 7% 0  4%;
+      h1{
+        font-size: 55px;
+        line-height: 55px;
+      }
+      p{
+        width: 90%;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 420px){
+  .create{
+    &__box{
+      padding: 15% 7% 0  4%;
+      h1{
+        font-size: 40px;
+        line-height: 40px;
+      }
+      p{
+        width: 90%;
+        opacity: 0.9;
+      }
+    }
+  }
+} 

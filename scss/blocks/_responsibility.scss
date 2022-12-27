@@ -1,0 +1,130 @@
+.responsibility {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__picture {
+    max-width: 34%;
+    height: 520px;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+  &__box {
+    width: 39%;
+    padding-left: 10%;
+
+    h3 {
+      @extend %title;
+      color: $responsibility-title-text-color;
+      padding-bottom: 32px;
+    }
+    p {
+      @extend %text;
+      color: $responsibility-title-text-color;
+    }
+  }
+}
+@media only screen and (max-width: 1220px) {
+  .responsibility {
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 1130px) {
+  .responsibility {
+    &__box {
+      h3 {
+        padding-bottom: 15px;
+        line-height: 33px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 989px) {
+  .responsibility {
+    &__picture {
+        width: 100%;
+      img {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 848px){
+    .responsibility{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 200px;
+        &__picture{
+            display: flex;
+            height: 450px;
+            margin-left: 31%;
+            img{
+                width: 270px;
+                height: 350px;
+            }
+        }
+        &__box{
+            width:80%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5%;
+            padding-left: 11%;
+            h3{
+                text-align: center;
+            }
+            p{
+                margin-left: 2%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 747px){
+    .responsibility{
+        &__picture{
+            margin-left: 27%;
+        }
+    }
+}
+@media only screen and (max-width: 515px){
+     .responsibility{
+        &__picture{
+            height: 390px;
+            margin-left: 22%;
+
+         img{
+            width: 230px;
+            height: 300px;
+
+         }
+        }
+        &__box{
+            width: 88%;
+            padding-left: 5%;
+            h3{
+                font-size: 32px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 391px){
+    .responsibility{
+        &__picture{
+            margin-left: 10%;
+        }
+    }
+}

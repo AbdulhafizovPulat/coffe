@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+%title {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+}
+%text {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.8;
+}
+%span {
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+}
+%resp-text {
+  width: 15px;
+  line-height: 25px;
+}
+
+.coffe__btn {
+  padding: 15px 31px;
+  background-color: var(--coffe-btn-bgcolor);
+  border-radius: 6px;
+  border: none;
+  font-family: "Fraunces 9pt";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  a {
+    color: var(--coffe-btn-color);
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,217 @@
+.benefits__main{
+  height: 700px;
+  .benefits{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--benefits-bg-color);
+    border-radius: 10px;
+    color: var(--benefits-color);
+    position: relative;
+    margin-bottom: 250px;
+    padding-bottom: 200px;
+
+
+    &__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center;
+    }
+    &__title {
+      padding-top: 100px;
+      padding-bottom: 32px;
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    &__text {
+      width: 40%;
+      padding-bottom: 140px;
+      opacity: 0.7;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+    }
+    &__cards {
+      height: 360px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      gap: 3%;
+      position: absolute;
+      top: 63%;
+      left: 1%;
+    }
+    &__items {
+      width: 26%;
+      padding-top: 5%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: var(--benefits-cards-bgcolor);
+      border: none;
+      border-radius: 10px;
+    }
+    &__subtitle {
+      padding: 50px 0 24px;
+      font-family: "Fraunces 9pt";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &__sub-text {
+      width: 80%;
+      height: 120px;
+      padding: 0 8px 28px;
+      opacity: 0.7;
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;  
+      line-height: 26px;
+    }
+  }
+
+}
+@media only screen and (max-width: 1012px){
+  .benefits__main{
+    .benefits{
+      margin-top: 27%;
+      &__text{
+        width: 55%;
+        padding-bottom: 100px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 899px){
+  .benefits__main{
+    height: 1100px;
+    padding-top: 0;
+    margin-top: 0;
+    .benefits{
+      &__info{
+        .benefits__text{
+          width: 80%;
+        }
+
+      }
+      &__cards{
+        width: 88%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        left: 6%;
+        
+      }
+      &__items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 0;
+
+        img{
+          padding-left: 4%;
+        }
+      }
+      &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      &__subtitle{
+        padding: 10% 0 2%;
+      }
+      &__sub-text{
+        width: 70%;
+        padding: 0;
+      }
+    }
+  }
+}
+@media only screen and(max-width:749px){
+  .benefits__main{
+    .benefits{
+
+      &__text{
+        width: 280%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:536px){
+  .benefits__main{
+    .benefits{
+      &__title{
+        font-size: 28px;
+        padding-top: 40px;
+      }
+      &__cards{
+        top: 76%;
+      }
+      &__items{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+      }
+      &__text{
+       width: 380%;
+       font-size: 14px;
+       line-height: 22px;
+      }
+      &__sub-title{
+        padding: 5% 0 3%;
+      }
+      &__sub-text{
+        width: 90%;
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+@media only screen and (max-width:508px){
+  .benefits__main{
+    margin-top: 180%;
+    
+  }
+}

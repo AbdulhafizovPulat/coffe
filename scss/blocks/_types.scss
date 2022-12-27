@@ -1,0 +1,222 @@
+.types {
+  height: 2600px;
+  display: flex;
+  align-items: baseline;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 13%;
+    margin-left: 11%;
+    a {
+      width: 140%;
+      padding: 15.5% 0;
+      @extend %span;
+      color: $types-nav-text-color;
+      border-bottom: 2px solid #83888f;
+      opacity: 0.6;
+      &:hover {
+        opacity: 0.8;
+      }
+      &:active {
+        opacity: 1;
+      }
+    }
+  }
+  &__cards {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    .types__content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-bottom: 9%;
+      h2 {
+        width: 84%;
+        font-family: "Fraunces 9pt";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 43px;
+        line-height: 48px;
+        color: #83888f;
+      }
+    }
+    .types__list {
+      display: flex;
+      gap: 3%;
+      .types__items {
+        margin-bottom: 12%;
+        width: 19%;
+        padding: 3% 4% 7%;
+        background-color: $types-cards-bg-color;
+        border-radius: 8px;
+        &:hover {
+          background-color: $types-cards-hover-bg-color;
+          h5,
+          p {
+            color: $types-cards-hover-color;
+          }
+        }
+        &:active {
+          background-color: $types-cards-active-bg-color;
+          h5,
+          p {
+            color: $types-nav-text-color;
+          }
+        }
+        h5 {
+          margin-bottom: 15%;
+          font-family: "Fraunces 9pt";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 32px;
+          color: $types-nav-text-color;
+        }
+        p {
+          @extend %text;
+          color: $types-nav-text-color;
+        }
+      }
+    }
+    .types__box {
+      width: 60%;
+      height: 180px;
+      margin-bottom: 10%;
+      margin-right: 13%;
+      background-color: $types-box-bg-color;
+      border-radius: 10px;
+      padding: 4% 7% 4%;
+      p {
+        @extend %text;
+        font-size: 19px;
+        color: #ffffff;
+        opacity: 0.5;
+        padding-bottom: 8px;
+      }
+      h6 {
+        width: 97%;
+        font-family: "Fraunces 9pt";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 40px;
+        color: #ffffff;
+        span {
+          color: #0e8784;
+        }
+      }
+    }
+    .types__btn {
+      margin-right: 13.3%;
+    }
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .types {
+    height: 2800px;
+    &__nav {
+      display: none;
+    }
+    .types__content {
+      width: 80%;
+      h2 {
+        width: 70%;
+      }
+    }
+    .types__list {
+      display: flex;
+      gap: 3%;
+      margin-left: 16%;
+      .types__items {
+        width: 20%;
+        padding: 3% 2.5% 7%;
+      }
+    }
+    .types__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .types__btn {
+      margin: 0 auto;
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+  .types {
+    height: 2400px;
+    .types__content {
+      width: 80%;
+      h2 {
+        font-size: 39px;
+        line-height: 45px;
+        width: 70%;
+      }
+    }
+    .types__list {
+      display: flex;
+      gap: 3%;
+      margin-left: 6%;
+      .types__items {
+        width: 35%;
+        padding: 3% 2.5% 4%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .types {
+    height: 100%;
+    .types__content {
+      width: 80%;
+      h2 {
+        font-size: 30px;
+        line-height: 40px;
+        width: 80%;
+      }
+    }
+    .types__list {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3%;
+      margin-right: 7%;
+      .types__items {
+        text-align: center;
+        width: 100%;
+        padding: 3% 2.5% 6%;
+        h5 {
+          margin-bottom: 5%;
+          font-size: 22px;
+          line-height: 28px;
+        }
+        p {
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
+    .types__box {
+      margin-right: 6%;
+      width: 70%;
+      height: 300px;
+    }
+  }
+}
+@media only screen and (max-width: 404px) {
+  .types {  
+    height: 2950px;
+    .types__content {
+      width: 93%;
+      h2 {
+        font-size: 25px;
+        line-height: 30px;
+        width: 90%;
+      }
+    }
+  }
+}
